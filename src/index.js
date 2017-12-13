@@ -31,9 +31,9 @@ export default class Alipay {
       this.publicKey = "-----BEGIN PUBLIC KEY-----\n" + this.publicKey
         + "\n-----END PUBLIC KEY-----"
     }
-    if (this.privKey.indexOf('BEGIN RSA PRIVATE KEY') === -1) {
-      this.privKey = "-----BEGIN RSA PRIVATE KEY-----\n" + this.privKey
-        + "\n-----END RSA PRIVATE KEY-----"
+    if (this.privKey.indexOf('BEGIN PRIVATE KEY') === -1) {
+      this.privKey = "-----BEGIN PRIVATE KEY-----\n" + this.privKey
+        + "\n-----END PRIVATE KEY-----"
     }
   }
 
